@@ -1,0 +1,14 @@
+{
+  "name": "request",
+  "version": "1.0.0",
+  "description": "Requisições paralelas http para testes de performance de sites",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robson Quaresma",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
