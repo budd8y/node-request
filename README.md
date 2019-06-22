@@ -9,5 +9,5 @@ Exemplo:
 node app.js https://facebook.com 1000
 
 Caso não sejam informados os parms, serão adotados os seguintes valores:
-URL = https://www.google.com.br
-QTDE DE REQUISIÇÕES: 100
+- URL = https://www.google.com.br
+- QTDE DE REQUISIÇÕES: 100
