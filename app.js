@@ -3,19 +3,20 @@ const args   = process.argv;
 const url    = args[2] || 'https://www.google.com.br';
 const limit  = parseInt(args[3]) || 100;
 let arrayReq = [];
+const timeMsg= 5000;
+// Globais
+global.status  = false;
+global.qtdePro = 1;
 
 console.log(`URL: ${url}`, `LIMIT: ${limit}`);
 console.log('Aguarde, estamos processando...');
 setInterval(() => {
     if (!global.status) {
-        console.log(`Tempo de processamento: ${global.qtdePro * 5} segundos...`);
+        console.log(`Tempo de processamento: ${global.qtdePro * (timeMsg / 1000)} segundos...`);
         global.qtdePro = global.qtdePro + 1;
     }
-}, 5000);
+}, timeMsg);
 
-// Globais
-global.status  = false;
-global.qtdePro = 1;
 
 const reqs = (url) =>{
     return new Promise((resolve, reject) => {
