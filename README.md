@@ -1,7 +1,7 @@
 # node-request
 Requisições simultâneas http com node:
 
-Para utilizar basta fazer o clone do repositório, entrar na pasta, baixar as dependências do node (npm i) e, ainda na pasta executar:
+Para utilizar basta fazer o clone do repositório, entrar na pasta, baixar as dependências do node (npm i) e, ainda na pasta, executar:
 
 node app.js url_de_requisicao quantidade_de_requisicoes
 
